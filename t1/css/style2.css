@@ -1,0 +1,167 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.purchase-interface {
+    background: linear-gradient(120deg, #FFD641, #FFD641, #FFD641);
+    border-radius: 25px;
+    width: 380px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.side-image {
+    float: left;
+    margin-right: 900px;
+    width: 500px; /* Cambia el tamaño de la imagen a 300px de ancho */  
+    position: absolute;
+}
+
+.value, .indicator {
+    color: rgb(0, 0, 0); /* Texto negro */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Fuente personalizada */
+}
+
+/* Estilos de la tarjeta de tiempo */
+.time-card {
+    display: flex; /* Usar display flex */
+    flex-direction: column; /* Apilar los elementos uno encima del otro */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    width: 60px;
+    height: 45px;
+    background-color: #ffffffe0;
+}
+
+.value {
+
+
+
+}
+
+.indicator {
+
+
+
+}
+
+.progress { 
+    width: 100%; 
+    height: 8px; 
+    background-color: #5a5a5a; 
+    margin-top: 15px; 
+    position: relative; 
+}
+
+.bar { 
+    height: 100%; 
+    background-color: #1fa361; 
+    height: 8px;
+}
+
+/* Estilos para los campos de cantidad */
+.amountField {
+    position: relative;
+}
+
+.amountType {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Ajusta este valor según tu preferencia */
+}
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    z-index: 9999;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el modal */
+    display: none;
+    width: 360px; /* Ancho del modal */
+    max-width: 360px; /* Ancho máximo del modal */
+    height: auto; /* O el valor que desees */
+    max-height: 500px; /* O el valor que desees */
+    color: rgb(255, 255, 255); /* Texto negro */
+
+}
+
+.modal-content {
+    background: #1b1a1a; /* Fondo color sólido */
+    background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(1, 69, 133) 100%), rgb(1, 153, 153);
+    padding: 20px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    width: 360px; /* Ancho del modal */
+
+}
+
+ .close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+ }
+ 
+ 
+/* FIN MODAL */
+
+
+.iconmodal-container {
+    display: flex; /* Establece flexbox para alinear los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.iconmodal-container .btn {
+    margin-right: 10px; /* Espacio entre los botones (ajusta según sea necesario) */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+
+
+ .container {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+}
+
+.copy-icon {
+    cursor: pointer; /* Cambiamos el cursor para indicar que es clickeable */
+    margin-left: -7px; /* Espacio a la izquierda del texto "Copied" */
+    margin-top: -16px; /* Espacio a la izquierda del texto "Copied" */
+}
+.copied-text {
+    display: none; /* Inicialmente ocultamos el texto "Copied" */
+    margin-left: 5px; /* Espacio a la izquierda del texto "Copied" */
+}
+
+
+#direccion-1,
+#direccion-2,
+#direccion-3,
+#direccion-4,
+#direccion-5,
+#direccion-6 {
+    font-size: 10px; /* Tamaño de fuente para la dirección */
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin-right: 10px; /* Espacio entre la dirección y la imagen de copiar */
+}
+
+
+
+
