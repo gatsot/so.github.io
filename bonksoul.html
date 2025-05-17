@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from Bonksoulsolana.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Apr 2025 04:43:34 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonksoul - The King of Memecoin</title>
+    <!-- Meta Information -->
+    <meta name="description" content="Join the fastest-growing meme sensation on Solana! Bonksoul is the most based meme token with massive growth potential.">
+    <meta name="keywords" content="Bonksoul, meme coin, solana, crypto, presale, token">
+    <meta name="author" content="Bonksoul Team">
+    <meta property="og:title" content="Bonksoul - The King of Memecoin">
+    <meta property="og:description" content="Join the fastest-growing meme sensation on Solana! Bonksoul is the most based meme token with massive growth potential.">
+    <meta property="og:image" content="z1/Bonksoul/logo.png" style="border-radius: 25%;">
+    <meta property="og:url" content="https://theBonksoulcoin.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bonksoul - The King of Memecoin">
+    <meta name="twitter:description" content="Join the fastest-growing meme sensation on Solana! Bonksoul is the most based meme token with massive growth potential.">
+    <meta name="twitter:image" content="z1/Bonksoul/logo.png" style="border-radius: 25%;">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="z1/Bonksoul/logo.png" style="border-radius: 25%;">
+    <link rel="apple-touch-icon" href="z1/Bonksoul/logo.png" style="border-radius: 25%;">
+    <!-- Styles and Scripts -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="../cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="web15/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+		@font-face {
+		  font-family: 'DirtFont';
+		  src: url('web15/dirt.ttf') format('truetype');
+		}
+		
+		.font-dirt {
+		  font-family: 'DirtFont', sans-serif;
+		}
+		</style>
+			  <style>
+				@font-face {
+					font-family: 'Dirt2Font';
+					src: url('web15/dirt2.ttf') format('truetype');
+				}
+			  
+				.font-dirt2 {
+					font-family: 'Dirt2Font', sans-serif;
+				}
+			  </style>
+</head>
+
+<body class="bg-[#1a472a] text-white font-['Space_Grotesk']">
+    <nav class="fixed w-full bg-[#1a472a]/90 backdrop-blur-sm z-50 border-b border-green-500/20">
+        <div class="container mx-auto px-4 py-4 flex items-center">
+            <div class="flex items-center space-x-2 mr-10">
+                <img src="z1/Bonksoul/logo.png" alt="Bonksoul Logo" class="w-auto h-12" style="border-radius: 50%;">
+                <!-- <span class="text-2xl font-bold">Bonksoul</span> -->
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-green-400 transition">About</a>
+                <a href="#how-to-buy" class="hover:text-green-400 transition">How to Buy</a>
+                <a href="#tokenomics" class="hover:text-green-400 transition">Tokenomics</a>
+                <a href="#roadmap" class="hover:text-green-400 transition">Roadmap</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+            <div class="absolute inset-0 bg-[url('Bonksoul-pattern.png')] opacity-5"></div>
+            <div class="container mx-auto px-4 text-center z-10">
+                <img src="z1/Bonksoul/logo.png" style="width: 433px; height: 433px; border-radius: 25%;" alt="Bonksoul Hero" class="mx-auto mb-8 animate-float">
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 font-dirt">
+                    Bonksoul
+                </h1>
+                <p class="text-xl md:text-2xl mb-4 text-green-400">The Most Based Meme Token on Solana</p>
+                <p class="text-lg max-w-2xl mx-auto mb-8">
+                    Join the fastest growing meme sensation on Solana! Don't miss your chance to be part of this gem! 🚀
+                    Tokens will be airdropped to your wallet after your contribution is confirmed.
+                </p>
+                <div class="mb-8 hidden">
+                    <p class="text-xl font-bold mb-2">Presale Ends In:</p>
+                    <div class="flex justify-center gap-4" id="countdown-timer">
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <span id="days" class="text-3xl font-bold text-green-400">00</span>
+                            <span class="text-sm">Days</span>
+                        </div>
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <span id="hours" class="text-3xl font-bold text-green-400">00</span>
+                            <span class="text-sm">Hours</span>
+                        </div>
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <span id="minutes" class="text-3xl font-bold text-green-400">00</span>
+                            <span class="text-sm">Minutes</span>
+                        </div>
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <span id="seconds" class="text-3xl font-bold text-green-400">00</span>
+                            <span class="text-sm">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button id="openPresaleBtn" class="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-8 rounded-full transition">
+                        Join Presale
+                    </button>
+
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a  target="_blank" class="hover:text-green-400">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a  target="_blank" class="hover:text-green-400">
+                        <i class="fab fa-telegram text-2xl"></i>
+                    </a>
+                </div>
+
+                <!-- Presale details section -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offer Section -->
+        <section class="py-12 bg-black/20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <i class="far fa-clock text-2xl text-green-400 mr-3"></i>
+                    <h2 class="text-3xl font-bold text-green-400">Limited Time Offer</h2>
+                </div>
+                <p class="text-xl mb-4">Get 100,000 Bonksoul tokens for just 1 SOL during our presale event!</p>
+                <button id="openPresaleBtn2" class="inline-block bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-8 rounded-full transition">
+                    Get Early Access
+                </button>
+            </div>
+        </section>
+
+        <!-- How to Buy Section -->
+        <section id="how-to-buy" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-center">How to Buy Bonksoul</h2>
+                <p class="text-center text-xl mb-12 max-w-2xl mx-auto">Just 4 simple steps to own the hottest meme token on Solana. Start your journey to massive gains today!</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl">1</div>
+                            <h3 class="text-xl font-bold ml-4">Create a Wallet</h3>
+                        </div>
+                        <p>Download Phantom or any Solana wallet and set it up</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl">2</div>
+                            <h3 class="text-xl font-bold ml-4">Get Some SOL</h3>
+                        </div>
+                        <p>Buy SOL from any major exchange</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl">3</div>
+                            <h3 class="text-xl font-bold ml-4">Send SOL</h3>
+                        </div>
+                        <p>Send SOL to the presale address using your Wallet. Do NOT send from an exchange.</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl">4</div>
+                            <h3 class="text-xl font-bold ml-4">Receive Bonksoul Tokens</h3>
+                        </div>
+                        <p>Bonksoul tokens will be airdropped to your wallet minutes after your contribution is confirmed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokenomics Section -->
+        <section id="tokenomics" class="py-16 bg-black/20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-center">Tokenomics</h2>
+                <p class="text-center text-xl mb-12 max-w-2xl mx-auto">Transparent and fair distribution designed for maximum community benefit and growth potential!</p>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-green-400">Total Supply</h3>
+                            <p class="text-4xl font-bold">1,000,000,000 Bonksoul</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span>Presale</span>
+                                <span class="text-green-400">80%</span>
+                            </div>
+                            <div class="w-full bg-black/20 rounded-full h-4">
+                                <div class="bg-green-500 h-4 rounded-full" style="width: 80%"></div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>Liquidity</span>
+                                <span class="text-green-400">20%</span>
+                            </div>
+                            <div class="w-full bg-black/20 rounded-full h-4">
+                                <div class="bg-green-500 h-4 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <canvas id="tokenomicsChart" class="max-w-md w-full"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-center">Roadmap</h2>
+                <p class="text-center text-xl mb-12 max-w-2xl mx-auto">Our ambitious journey to the moon is just beginning. Here's how we're going to 100x your investment! 🚀</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-black/20 p-8 rounded-xl border border-green-500/20">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Phase 1: Launch</h3>
+                        <ul class="space-y-4">
+                            <li>✅ Website Launch</li>
+                            <li>✅ Community Building</li>
+                            <li>✅ Presale Event</li>
+                            <li>⏳ Token Launch</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-8 rounded-xl border border-green-500/20">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Phase 2: Growth</h3>
+                        <ul class="space-y-4">
+                            <li>Marketing Campaign</li>
+                            <li>CEX Listings</li>
+                            <li>Partnership Announcements</li>
+                            <li>Community Events</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-8 rounded-xl border border-green-500/20">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Phase 3: Expansion</h3>
+                        <ul class="space-y-4">
+                            <li>NFT Collection</li>
+                            <li>Staking Platform</li>
+                            <li>DAO Governance</li>
+                            <li>Major Exchange Listings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 bg-black/20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-center">FAQ</h2>
+                <p class="text-center text-xl mb-12 max-w-2xl mx-auto">Got questions? We've got answers! Everything you need to know about the Bonksoul revolution!</p>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20 faq-item">
+                        <h3 class="text-xl font-bold mb-2">What is Bonksoul?</h3>
+                        <p>Bonksoul is a community-driven meme token on the Solana blockchain, inspired by the iconic Bonksoul the token meme. It's designed to be the most memeable, shareable, and profitable token in the Solana ecosystem!</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20 faq-item">
+                        <h3 class="text-xl font-bold mb-2">How to participate in presale?</h3>
+                        <p>Send SOL to the presale address and you'll receive Bonksoul tokens automatically after the contribution is confirmed.</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20 faq-item">
+                        <h3 class="text-xl font-bold mb-2">When is the token launch?</h3>
+                        <p>The token launch will occur immediately after the presale ends. Join our social channels for the exact date and don't miss the moment we go parabolic!</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20 faq-item">
+                        <h3 class="text-xl font-bold mb-2">Why invest in Bonksoul?</h3>
+                        <p>Meme coins have shown some of the highest ROIs in crypto history! With our strong community, fair tokenomics, and aggressive marketing strategy, Bonksoul is positioned to be the next 100x gem on Solana!</p>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-xl border border-green-500/20 faq-item">
+                        <h3 class="text-xl font-bold mb-2">Is there a maximum contribution?</h3>
+                        <p>Yes, to ensure fair distribution, the minimum contribution is 0.1 SOL and maximum is 50 SOL per wallet. This prevents whales from controlling too much of the supply!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presale Section -->
+        <section id="presale" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-4 text-center">Join Presale Now</h2>
+                <p class="text-center text-xl mb-12 max-w-2xl mx-auto">Early adopters make the biggest gains! Don't miss your opportunity - presale spots are filling up fast!</p>
+                <div class="max-w-2xl mx-auto bg-black/20 p-8 rounded-xl border border-green-500/20">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Presale Rate</h3>
+                        <p class="text-3xl font-bold text-green-400">100,000 Bonksoul = 1 SOL</p>
+                    </div>
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Send SOL to:</h3>
+                        <div class="bg-black/40 p-4 rounded-lg cursor-pointer hover:bg-black/50 transition" id="wallet-address">
+                            <p class="text-lg break-all">6bL72EWb2X3DUq2CfhEoQwuaqvRSTYz5kDqJ1zXz5iua</p>
+                        </div>
+                        <p class="text-sm text-green-400 mt-2">Click to copy address</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-lg mb-4">
+                            Tokens will be airdropped to your wallet after the presale ends.
+                        </p>
+                        <p class="text-sm text-green-400">
+                            Min contribution: 0.1 SOL | Max contribution: 50 SOL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add the static wallet section where the timer was -->
+        <!-- <section id="wallet-section" class="py-12 bg-black/30">
+            <div class="container mx-auto px-4">
+                <div class="max-w-xl mx-auto bg-black/40 rounded-xl border border-green-500/20 p-6">
+                    <h3 class="text-2xl font-bold text-center mb-4">Send SOL to this address</h3>
+                    <div id="static-wallet-address" class="flex flex-col items-center bg-black/60 rounded-lg p-4 cursor-pointer hover:bg-black/80 transition-all border border-green-500/30">
+                        <p class="text-green-400 font-mono text-sm md:text-base overflow-hidden text-center break-all mb-2">6bL72EWb2X3DUq2CfhEoQwuaqvRSTYz5kDqJ1zXz5iua</p>
+                        <button class="mt-2 bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-4 rounded-md flex items-center transition-all">
+                            <i class="fas fa-copy mr-2"></i> Copy Address
+                        </button>
+                    </div>
+                    <p class="text-sm text-gray-400 text-center mt-4">Minimum: 0.1 SOL | Get 1,000,000 Bonksoul per 1 SOL</p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Presale Popup -->
+    <div id="presalePopup" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden overflow-y-auto">
+        <div class="bg-[#0a1e14] border border-green-500/20 rounded-2xl p-8 max-w-lg w-full mx-4 relative">
+            <button id="closePresaleBtn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-green-400 mb-2">Bonksoul Presale</h2>
+                <p class="text-gray-300">Join the fastest growing meme sensation on Solana!</p>
+            </div>
+            
+
+            <div class="flex justify-center items-center mb-8">
+                <div class="text-center">
+                    <p class="text-gray-400 mb-2">Bonksoul</p>
+                </div>
+            </div>
+            
+            <!-- Wallet Address -->
+            <div id="popupWalletAddress" class="bg-black/60 border border-green-500/20 rounded-lg p-4 mb-8 cursor-pointer hover:bg-black/80 transition-all">
+                <div class="flex flex-col items-center">
+                    <p class="text-sm text-gray-400 mb-2">Send SOL to this address:</p>
+                    <div class="flex flex-col items-center">
+                        <p class="text-green-400 font-mono text-sm md:text-base overflow-hidden text-center break-all mb-2">6bL72EWb2X3DUq2CfhEoQwuaqvRSTYz5kDqJ1zXz5iua</p>
+                        <button class="mt-2 bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-4 rounded-md flex items-center transition-all">
+                            <i class="fas fa-copy mr-2"></i> Copy Address
+                        </button>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 text-center mt-2">Minimum: 0.1 SOL | Get 1,000,000 Bonksoul per 1 SOL</p>
+            </div>
+            
+            <div class="bg-black/30 p-4 rounded-lg text-sm text-gray-300 mb-6">
+                <p><i class="fas fa-info-circle text-green-400 mr-2"></i> Bonksoul tokens will be airdropped to your wallet minutes after your contribution is confirmed.</p>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-sm text-gray-400">For any questions, join our community</p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a  target="_blank" class="text-green-400 hover:text-green-300">
+                        <i class="fab fa-telegram text-2xl"></i>
+                    </a>
+                    <a  target="_blank" class="text-green-400 hover:text-green-300">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-8 bg-black/20 border-t border-green-500/20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <img src="z1/Bonksoul/logo.png" style="border-radius: 25%;" alt="Bonksoul Logo" class="w-auto h-8">
+                    <!-- <span class="font-bold">Bonksoul</span> -->
+                </div>
+                <div class="flex space-x-6">
+                    <a  target="_blank" class="hover:text-green-400 transition">
+                        <i class="fab fa-twitter mr-1"></i> Twitter
+                    </a>
+                    <a  target="_blank" class="hover:text-green-400 transition">
+                        <i class="fab fa-telegram mr-1"></i> Telegram
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-sm text-gray-400">&copy; 2025 Bonksoul. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="web15/script.js"></script>
+</body>
+
+<!-- Mirrored from Bonksoulsolana.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Apr 2025 04:43:38 GMT -->
+</html> 

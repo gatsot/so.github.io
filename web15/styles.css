@@ -1,0 +1,505 @@
+/* Custom styles */
+:root {
+    --pepe-green: #ffee00;
+    --pepe-light-green: #00ff5e;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--pepe-green);
+    background-image: linear-gradient(to bottom, rgb(11, 121, 88), rgb(4, 127, 209));
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(-2deg);
+    }
+    75% {
+        transform: translateY(10px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.hover-wiggle:hover {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+/* Glow effects */
+.glow {
+    text-shadow: 0 0 10px var(--pepe-light-green);
+}
+
+.glow-border {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--pepe-green);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pepe-light-green);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
+
+/* Custom selection */
+::selection {
+    background: var(--pepe-light-green);
+    color: var(--pepe-green);
+}
+
+/* Custom focus styles */
+:focus {
+    outline: 2px solid var(--pepe-light-green);
+    outline-offset: 2px;
+}
+
+/* Button hover effects */
+.rounded-full {
+    transition: all 0.3s ease;
+}
+
+.rounded-full:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Card hover effects */
+.border-green-500\/20 {
+    transition: all 0.3s ease;
+}
+
+.border-green-500\/20:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(34, 197, 94, 0.2);
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+/* Popup animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* Progress bar animation */
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: var(--progress-width); }
+}
+
+.bg-green-500.h-2 {
+    animation: fillProgress 1s ease-out forwards;
+}
+
+/* Countdown timer pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#seconds {
+    animation: pulse 1s infinite;
+}
+
+/* Chart hover effect */
+#tokenomicsChart {
+    transition: transform 0.3s ease;
+}
+
+#tokenomicsChart:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 71, 42, 0.95);
+        backdrop-filter: blur(8px);
+        padding: 1.5rem;
+        gap: 1.5rem;
+        transform: translateY(0);
+        opacity: 1;
+        border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        text-align: center;
+        z-index: 40;
+    }
+    
+    .mobile-menu.active a {
+        font-size: 1.25rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .mobile-menu.active a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Social icons hover effect */
+.hover\:text-green-400:hover i {
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.6));
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Roadmap checkmarks */
+li:has(✅) {
+    color: var(--pepe-light-green);
+}
+
+/* FAQ hover effect */
+.faq-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+/* Wallet address copy effect */
+#wallet-address {
+    position: relative;
+    overflow: hidden;
+}
+
+#wallet-address::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(34, 197, 94, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+#wallet-address:hover::before {
+    left: 100%;
+}
+
+/* Highlight animation for countdown */
+@keyframes highlight-pulse {
+    0% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        background-color: rgba(34, 197, 94, 0.2);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.bg-black\/30 {
+    animation: highlight-pulse 4s infinite;
+}
+
+/* Token price line-through effect */
+.line-through {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.line-through::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(239, 68, 68, 0.7);
+    left: 0;
+    top: 50%;
+    animation: strike 0.5s ease-out forwards;
+}
+
+@keyframes strike {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* FOMO star animation */
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-star {
+    animation: spin-slow 4s linear infinite;
+    display: inline-block;
+}
+
+/* Button icons */
+.fas, .fab, .far {
+    vertical-align: middle;
+}
+
+/* Limited spots remaining pulse */
+@keyframes text-pulse {
+    0% {
+        color: #facc15;
+    }
+    50% {
+        color: #fef08a;
+    }
+    100% {
+        color: #facc15;
+    }
+}
+
+.text-yellow-400.font-bold {
+    animation: text-pulse 2s infinite;
+}
+
+/* Countup animation for numbers */
+.countup {
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on wallet address */
+#popupWalletAddress:hover p, #wallet-address:hover p {
+    color: var(--pepe-light-green);
+}
+
+/* Hover effect for FAQ */
+.faq-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-item:hover {
+    background: rgba(34, 197, 94, 0.1);
+    transform: translateY(-2px);
+}
+
+.faq-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--pepe-light-green);
+    transition: width 0.3s ease;
+}
+
+.faq-item:hover::after {
+    width: 100%;
+}
+
+/* FOMO notification animation */
+@keyframes slide-in-out {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    10%, 90% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Presale progress bar animation */
+@keyframes progress-flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+#presaleProgress {
+    animation: progress-flash 2s infinite, fillProgress 1s ease-out forwards;
+    background: linear-gradient(90deg, var(--pepe-light-green), #4ade80);
+    background-size: 200% 100%;
+}
+
+/* Emoji float animation */
+@keyframes emoji-float {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+.float-emoji {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    animation: emoji-float 6s ease-in-out infinite;
+    font-size: 2rem;
+}
+
+/* Presale button shine effect */
+.bg-green-500 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-green-500::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
+
+/* Progress bar enhancements */
+.presale-progress {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+/* Add a shimmer effect */
+.presale-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 11;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Make sure progress container has enough contrast */
+#presaleProgress {
+    min-width: 5%;
+} 
