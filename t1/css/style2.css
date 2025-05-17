@@ -8,9 +8,9 @@ body, html {
 }
 
 .purchase-interface {
-    background: linear-gradient(120deg, #FFD641, #FFD641, #FFD641);
+    background: linear-gradient(120deg, #000000, #413300, #000000);
     border-radius: 25px;
-    width: 380px;
+    width: 400px;
     position: absolute;
     left: 50%;
     top: 50%;
